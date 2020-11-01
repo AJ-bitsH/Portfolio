@@ -1,6 +1,6 @@
 # portfolio
 
-A new Flutter project.
+Source code for presonal website in Flutter, hosted by Firebase
 
 ## Getting Started
 
