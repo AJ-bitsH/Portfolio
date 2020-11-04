@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/routing/route_names.dart';
 import 'package:portfolio/widgets/navigation_drawer/drawer_item.dart';
 import 'package:portfolio/widgets/navigation_drawer/navigation_drawer_header.dart';
 
@@ -15,10 +16,10 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawerItem("Projects", Icons.videocam),
-          DrawerItem("Articles", Icons.videocam),
-          DrawerItem("Hackathons", Icons.videocam),
-          DrawerItem("About", Icons.videocam),
+          DrawerItem("Projects", Icons.videocam, ProjectsRoute),
+          DrawerItem("Articles", Icons.videocam, ArticlesRoute),
+          DrawerItem("Hackathons", Icons.videocam, HackathonsRoute),
+          DrawerItem("About", Icons.videocam, AboutRoute),
         ],
       ),
     );
