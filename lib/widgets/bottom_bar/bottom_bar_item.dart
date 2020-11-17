@@ -10,10 +10,14 @@ class BottomBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => _launchURL(link),
-      child: Container(
-        child: Image.asset(source),
-        height: 80,
-        width: 80,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(15),
+        child: Image.asset(
+          source,
+          width: 50.0,
+          height: 50.0,
+          fit: BoxFit.fill,
+        ),
       ),
     );
   }

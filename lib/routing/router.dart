@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/routing/route_names.dart';
 import 'package:portfolio/views/about/about_view.dart';
 import 'package:portfolio/views/articles_view/articles_view.dart';
-import 'package:portfolio/views/hackathons/hackathons_view.dart';
+import 'package:portfolio/views/experience/experience_view.dart';
 import 'package:portfolio/views/home/home_view.dart';
 import 'package:portfolio/views/projects/projects_view.dart';
 
@@ -17,8 +17,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(ArticlesView());
     case ProjectsRoute:
       return _getPageRoute(ProjectsView());
-    case HackathonsRoute:
-      return _getPageRoute(HackathonsView());
+    case ExperienceRoute:
+      return _getPageRoute(ExperienceView());
     default:
       return _getPageRoute(HomeView());
   }
