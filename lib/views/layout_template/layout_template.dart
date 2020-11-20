@@ -3,7 +3,6 @@ import 'package:portfolio/locator.dart';
 import 'package:portfolio/routing/route_names.dart';
 import 'package:portfolio/routing/router.dart';
 import 'package:portfolio/services/navigation_service.dart';
-import 'package:portfolio/widgets/bottom_bar/bottom_bar_tablet_desktop.dart';
 import 'package:portfolio/widgets/centered_view/centered_view.dart';
 import 'package:portfolio/widgets/navigation_bar/navigation_bar.dart';
 import 'package:portfolio/widgets/navigation_drawer/navigation_drawer.dart';
@@ -24,13 +23,6 @@ class LayoutTemplate extends StatelessWidget {
           child: Column(
             children: <Widget>[
               NavigationBar(),
-              Expanded(
-                child: Navigator(
-                  key: locator<NavigationService>().navigatorKey,
-                  onGenerateRoute: generateRoute,
-                  initialRoute: HomeRoute,
-                ),
-              ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10.0),
                 child: Container(
@@ -39,7 +31,13 @@ class LayoutTemplate extends StatelessWidget {
                   color: Colors.black,
                 ),
               ),
-              BottomBarTabletDesktop()
+              Expanded(
+                child: Navigator(
+                  key: locator<NavigationService>().navigatorKey,
+                  onGenerateRoute: generateRoute,
+                  initialRoute: HomeRoute,
+                ),
+              ),
             ],
           ),
         ),

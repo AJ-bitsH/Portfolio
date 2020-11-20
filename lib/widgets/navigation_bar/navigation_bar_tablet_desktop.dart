@@ -17,11 +17,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              NavBarItem('Experience', ProjectsRoute),
+              NavBarItem('Experience', ExperienceRoute),
               SizedBox(
                 width: 50,
               ),
-              NavBarItem('Projects', ExperienceRoute),
+              NavBarItem('Projects', ProjectsRoute),
               SizedBox(
                 width: 50,
               ),
