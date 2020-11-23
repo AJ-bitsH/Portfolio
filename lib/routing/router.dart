@@ -10,33 +10,45 @@ import 'package:portfolio/views/projects/projects_view.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
-      return _getPageRoute(HomeView());
+      return _getPageRoute(HomeView(), settings);
     case AboutRoute:
-      return _getPageRoute(AboutView());
+      return _getPageRoute(AboutView(), settings);
     case ArticlesRoute:
-      return _getPageRoute(ArticlesView());
+      return _getPageRoute(ArticlesView(), settings);
     case ProjectsRoute:
-      return _getPageRoute(ProjectsView());
+      return _getPageRoute(ProjectsView(), settings);
     case ExperienceRoute:
-      return _getPageRoute(ExperienceView());
+      return _getPageRoute(ExperienceView(), settings);
     default:
-      return _getPageRoute(HomeView());
+      return _getPageRoute(HomeView(), settings);
   }
 }
 
-PageRoute _getPageRoute(Widget child) {
-  return _FadeRoute(child: child);
+PageRoute _getPageRoute(Widget child, RouteSettings settings) {
+  return _FadeRoute(child: child, routeName: settings.name);
 }
 
 class _FadeRoute extends PageRouteBuilder {
   final Widget child;
-  _FadeRoute({this.child})
+  final String routeName;
+  _FadeRoute({this.child, this.routeName})
       : super(
-            pageBuilder: (context, animation, secondaryAnimation) => child,
-            transitionsBuilder:
-                (context, animation, secondaryAnimation, child) =>
-                    FadeTransition(
-                      opacity: animation,
-                      child: child,
-                    ));
+          settings: RouteSettings(name: routeName),
+          pageBuilder: (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+          ) =>
+              child,
+          transitionsBuilder: (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+            Widget child,
+          ) =>
+              FadeTransition(
+            opacity: animation,
+            child: child,
+          ),
+        );
 }
