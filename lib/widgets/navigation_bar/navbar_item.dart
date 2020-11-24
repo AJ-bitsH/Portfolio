@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants/app_colors.dart';
 import 'package:portfolio/locator.dart';
 import 'package:portfolio/services/navigation_service.dart';
+import "package:portfolio/extensions/hover_extensions.dart";
 
 class NavBarItem extends StatelessWidget {
   final String title;
@@ -24,6 +25,6 @@ class NavBarItem extends StatelessWidget {
             color: primaryColor,
             borderRadius: BorderRadius.circular(5),
           )),
-    );
+    ).showCursorOnHover.translateOnHover;
   }
 }

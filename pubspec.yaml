@@ -30,6 +30,7 @@ dependencies:
   responsive_builder: ^0.1.2
   get_it:
   url_launcher:
+  universal_html: ^1.2.1
 
 dev_dependencies:
   flutter_test:

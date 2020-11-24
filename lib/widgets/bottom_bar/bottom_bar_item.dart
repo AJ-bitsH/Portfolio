@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import "package:portfolio/extensions/hover_extensions.dart";
 
 class BottomBarItem extends StatelessWidget {
   final String source;
@@ -19,7 +20,7 @@ class BottomBarItem extends StatelessWidget {
           fit: BoxFit.fill,
         ),
       ),
-    );
+    ).showCursorOnHover;
   }
 }
 
