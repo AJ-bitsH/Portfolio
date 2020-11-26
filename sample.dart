@@ -7,12 +7,15 @@ class NavBarItem extends StatefulWidget {
   final String title;
   final String navigationPath;
   const NavBarItem(this.title, this.navigationPath);
-
   @override
-  _NavBarItemState createState() => _NavBarItemState();
+  _NavBarItemState createState() => _NavBarItemState(title, navigationPath);
 }
 
 class _NavBarItemState extends State<NavBarItem> {
+  final String title;
+  final String navigationPath;
+  _NavBarItemState(this.title, this.navigationPath);
+
   double _fontsize = 20;
   Color _color = Colors.black;
   TextDecoration _underline = TextDecoration.none;

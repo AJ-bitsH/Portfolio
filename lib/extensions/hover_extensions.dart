@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:portfolio/extensions/detail_on_hover.dart';
+import 'package:portfolio/extensions/translate_on_hover.dart';
 
 extension HoverExtensions on Widget {
   Widget get showCursorOnHover {
