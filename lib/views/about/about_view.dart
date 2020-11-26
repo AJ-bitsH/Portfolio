@@ -13,6 +13,14 @@ class AboutView extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.0),
+              child: Container(
+                height: 1.0,
+                width: double.infinity,
+                color: Colors.black,
+              ),
+            ),
             BottomBarTabletDesktop()
           ],
         ),

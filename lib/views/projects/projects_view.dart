@@ -20,10 +20,16 @@ class ProjectsView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
+                  ProjectItem(
+                      "Apollo BRB",
+                      "Project Type - Software Development",
+                      "Created a cross platform mobile application for the firm using MERN stack",
+                      "../../assets/Capture.PNG"),
+                  ProjectItem(
+                      "Steam Inventory Script",
+                      "Project Type - Personal Project",
+                      "Created a script in python using Selenium for automating a task",
+                      "../../assets/script_code.PNG"),
                 ]),
             SizedBox(
               height: 40,
@@ -32,10 +38,16 @@ class ProjectsView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
+                  ProjectItem(
+                      "Frequency with Pressure",
+                      "Project Type - Research Project",
+                      "Data analysis matlab",
+                      "../../assets/physics.PNG"),
+                  ProjectItem(
+                      "Portfolio Website",
+                      "Project Type - Personal Project",
+                      "Created a personal website using flutter to showcase my portfolio",
+                      "../../assets/website.PNG"),
                 ]),
             SizedBox(
               height: 40,
@@ -44,15 +56,24 @@ class ProjectsView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
-                  ProjectItem("Soft Dev", "intern", "kam bhar bhar ke",
-                      "../../assets/apollo.png"),
+                  ProjectItem(
+                      "Hosted Hadoop Cluster on AWS",
+                      "Project Type - Personal Project",
+                      "Created a cluster of Hadoop instances using Amazon EC2",
+                      "../../assets/aws.png"),
                 ]),
             SizedBox(
               height: 40,
             ),
-            BottomBarTabletDesktop(),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10.0),
+              child: Container(
+                height: 1.0,
+                width: double.infinity,
+                color: Colors.black,
+              ),
+            ),
+            BottomBarTabletDesktop()
           ],
         ),
       ),
