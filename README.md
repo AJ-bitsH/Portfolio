@@ -1,6 +1,6 @@
 # Portfolio
 
-Source code for bulding a presonal website in Flutter, hosted by Firebase
+Source code for bulding a personal website in Flutter, hosted by Firebase
 
 ## Getting Started
 
