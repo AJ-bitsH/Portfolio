@@ -18,17 +18,16 @@ class BottomBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
+              BottomBarItem("images/git.png", "https://github.com/AJ-bitsH"),
+              SizedBox(
+                width: 50,
+              ),
               BottomBarItem(
-                  "../../assets/git.png", "https://github.com/AJ-bitsH"),
+                  "images/fb.png", "https://www.facebook.com/anuj.guglani.7/"),
               SizedBox(
                 width: 50,
               ),
-              BottomBarItem("../../assets/fb.png",
-                  "https://www.facebook.com/anuj.guglani.7/"),
-              SizedBox(
-                width: 50,
-              ),
-              BottomBarItem("../../assets/linkedin.png",
+              BottomBarItem("images/linkedin.png",
                   "https://www.linkedin.com/in/anuj-guglani-ab9b69141/"),
               SizedBox(
                 width: 50,

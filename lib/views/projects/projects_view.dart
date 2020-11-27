@@ -24,12 +24,12 @@ class ProjectsView extends StatelessWidget {
                       "Apollo BRB",
                       "Project Type - Software Development",
                       "Created a cross platform mobile application for the firm using MERN stack",
-                      "../../assets/Capture.PNG"),
+                      "images/Capture.PNG"),
                   ProjectItem(
                       "Steam Inventory Script",
                       "Project Type - Personal Project",
                       "Created a script in python using Selenium for automating a task",
-                      "../../assets/script_code.PNG"),
+                      "images/script_code.png"),
                 ]),
             SizedBox(
               height: 40,
@@ -42,12 +42,12 @@ class ProjectsView extends StatelessWidget {
                       "Frequency with Pressure",
                       "Project Type - Research Project",
                       "Data analysis matlab",
-                      "../../assets/physics.PNG"),
+                      "images/physics.PNG"),
                   ProjectItem(
                       "Portfolio Website",
                       "Project Type - Personal Project",
                       "Created a personal website using flutter to showcase my portfolio",
-                      "../../assets/website.PNG"),
+                      "images/website.png"),
                 ]),
             SizedBox(
               height: 40,
@@ -60,7 +60,7 @@ class ProjectsView extends StatelessWidget {
                       "Hosted Hadoop Cluster on AWS",
                       "Project Type - Personal Project",
                       "Created a cluster of Hadoop instances using Amazon EC2",
-                      "../../assets/aws.png"),
+                      "images/aws.png"),
                 ]),
             SizedBox(
               height: 40,

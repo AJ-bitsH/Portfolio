@@ -19,7 +19,7 @@ class ExperienceView extends StatelessWidget {
               "App Development Intern (Remote) - PS 2",
               "GURGAON,HARYANA      AUGUST 2020 - DECEMBER 2020",
               "Developed a cross-platform application with React Native as frontend and MongoDB Express and Node as the backend. Deployed to AWS microservices architecture",
-              "../../assets/apollo.png",
+              "images/apollo.png",
             ),
             SizedBox(
               height: 40,
@@ -29,7 +29,7 @@ class ExperienceView extends StatelessWidget {
               "Engineering Intern - Practice School 1",
               "FARIDABAD,HARYANA      MAY 2018 - JULY 2018",
               "Establishing and rectifying the cause of high shim and low shim between retainer and rear plate of transmission in Cage Transmision of Escorts Farmtrac tractors",
-              "../../assets/escorts_logo.png",
+              "images/escorts_logo.png",
             ),
             SizedBox(
               height: 40,
@@ -39,7 +39,7 @@ class ExperienceView extends StatelessWidget {
               "Content Writer (Remote) - Summer Intern",
               "HYDERABAD,TELANGANA      MAY 2017 - JULY 2017",
               "Creating written content for the website's landing pages and managing SEO for the website",
-              "../../assets/indiabuys.jpg",
+              "images/indiabuys.jpg",
             ),
             SizedBox(
               height: 40,
@@ -49,7 +49,7 @@ class ExperienceView extends StatelessWidget {
               "Joint Secretary of Spectrum",
               "HYDERABAD,TELANGANA      AUGUST 2017 - AUGUST 2018",
               "As post holder for Spectrum(Physics Assocation), was responsible for planning and conducting events like workshops,competitions,quizzes,and talks related to the domain of Physics",
-              "../../assets/bphc.png",
+              "images/bphc.png",
             ),
             SizedBox(
               height: 40,
