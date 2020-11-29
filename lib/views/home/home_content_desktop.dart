@@ -21,7 +21,7 @@ class HomeContentDesktop extends StatelessWidget {
               Description(),
               Expanded(
                 child: Center(
-                  child: CallToAction('Know More'),
+                  child: CallToAction('GET IN TOUCH'),
                 ),
               )
             ],

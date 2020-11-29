@@ -5,22 +5,26 @@ import "package:portfolio/extensions/hover_extensions.dart";
 class BottomBarItem extends StatelessWidget {
   final String source;
   final String link;
-  const BottomBarItem(this.source, this.link);
+  final String message;
+  const BottomBarItem(this.source, this.link, this.message);
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => _launchURL(link),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(15),
-        child: Image.asset(
-          source,
-          width: 50.0,
-          height: 50.0,
-          fit: BoxFit.fill,
+    return Tooltip(
+      message: message,
+      child: GestureDetector(
+        onTap: () => _launchURL(link),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(15),
+          child: Image.asset(
+            source,
+            width: 50.0,
+            height: 50.0,
+            fit: BoxFit.fill,
+          ),
         ),
-      ),
-    ).showCursorOnHover;
+      ).showCursorOnHover,
+    );
   }
 }
 

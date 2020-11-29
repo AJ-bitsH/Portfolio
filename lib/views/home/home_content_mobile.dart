@@ -15,7 +15,7 @@ class HomeContentMobile extends StatelessWidget {
         SizedBox(
           height: 100,
         ),
-        CallToAction('Know More'),
+        CallToAction('GET IN TOUCH'),
       ],
     );
   }
