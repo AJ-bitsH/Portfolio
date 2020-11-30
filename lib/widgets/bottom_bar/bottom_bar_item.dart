@@ -18,8 +18,8 @@ class BottomBarItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           child: Image.asset(
             source,
-            width: 50.0,
-            height: 50.0,
+            width: 40.0,
+            height: 40.0,
             fit: BoxFit.fill,
           ),
         ),

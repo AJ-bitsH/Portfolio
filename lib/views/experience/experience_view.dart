@@ -18,7 +18,7 @@ class ExperienceView extends StatelessWidget {
               "Apollo Tyres",
               "App Development Intern (Remote) - PS 2",
               "GURGAON,HARYANA      AUGUST 2020 - DECEMBER 2020",
-              "Developed a cross-platform application with React Native as frontend and MongoDB Express and Node as the backend. Deployed to AWS microservices architecture",
+              "Developed a cross-platform mobile application with React Native as the frontend framework and MongoDB,Express and Node as the backend. Deployed to an AWS microservices architecture",
               "images/apollo.png",
             ),
             SizedBox(
@@ -38,7 +38,7 @@ class ExperienceView extends StatelessWidget {
               "IndiaBuys",
               "Content Writer (Remote) - Summer Intern",
               "HYDERABAD,TELANGANA      MAY 2017 - JULY 2017",
-              "Creating written content for the website's landing pages and managing SEO for the website",
+              "Responsibilities included creating written content for the website's landing pages and managing SEO for the startup's website. Helped the founder with selecting a name for the startup",
               "images/indiabuys.jpg",
             ),
             SizedBox(

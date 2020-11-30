@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/views/about/authors.dart';
+import 'package:portfolio/views/about/domain_knowledge.dart';
+import 'package:portfolio/views/about/favourite_games.dart';
 import 'package:portfolio/views/about/langauges_container.dart';
 import 'package:portfolio/views/about/others_area.dart';
 import 'package:portfolio/views/about/technologies_area.dart';
@@ -27,13 +30,26 @@ class AboutView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 3,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              padding: EdgeInsets.all(10),
               height: 500,
               width: 500,
               child: Image.asset(
                 "images/hello.jpg",
                 fit: BoxFit.cover,
               ),
+            ),
+            SizedBox(
+              width: 30,
             ),
             Container(
               padding: EdgeInsets.all(20),
@@ -49,7 +65,7 @@ class AboutView extends StatelessWidget {
                 ),
                 Text(
                   descriptionBody,
-                  style: TextStyle(fontWeight: FontWeight.w200, fontSize: 15),
+                  style: TextStyle(fontWeight: FontWeight.w200, fontSize: 17),
                 ),
               ]),
             )
@@ -71,6 +87,18 @@ class AboutView extends StatelessWidget {
                 height: 50,
               ),
               OthersArea(),
+              SizedBox(
+                height: 50,
+              ),
+              DomainKnowledge(),
+              SizedBox(
+                height: 50,
+              ),
+              FavouriteGames(),
+              SizedBox(
+                height: 50,
+              ),
+              FavouriteAuthors(),
               SizedBox(
                 height: 50,
               ),

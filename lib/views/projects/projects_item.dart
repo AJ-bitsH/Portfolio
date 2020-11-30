@@ -23,25 +23,35 @@ class _ProjectItemState extends State<ProjectItem> {
       onExit: (e) => _mouseEnter(true),
       child: AnimatedContainer(
           duration: Duration(milliseconds: 200),
-          decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+          margin: const EdgeInsets.all(30),
+          decoration: BoxDecoration(
+            border: Border.all(color: Colors.grey[600], width: 0.5),
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: Offset(0, 3),
+              ),
+            ],
+          ),
           width: 500,
           height: 500,
           child: _hovering
               ? Image.asset(widget.projectImageSource)
               : Container(
-                  height: 500,
-                  width: 500,
                   decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: Colors.grey.withOpacity(0.80),
                     image: DecorationImage(
                       image: ExactAssetImage(widget.projectImageSource),
                     ),
                   ),
                   child: ClipRRect(
                     child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                      filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
                       child: Container(
-                        color: Colors.grey.withOpacity(0.1),
+                        margin: const EdgeInsets.all(30),
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -50,8 +60,8 @@ class _ProjectItemState extends State<ProjectItem> {
                                 widget.projectTitle,
                                 style: TextStyle(
                                     fontSize: 28,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black),
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white),
                               ),
                               SizedBox(
                                 height: 20,
@@ -69,9 +79,9 @@ class _ProjectItemState extends State<ProjectItem> {
                               Text(
                                 widget.projectDescription,
                                 style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal,
-                                    color: Colors.black),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.black87),
                               ),
                             ]),
                       ),
