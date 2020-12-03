@@ -52,6 +52,7 @@ class LanguagesArea extends StatelessWidget {
                 LanguageItem("pythonlogo.png", "Python"),
                 LanguageItem("jslogo.png", "JavaScript"),
                 LanguageItem("dart_logo.png", "Dart"),
+                LanguageItem("java_logo.png", "Java"),
               ],
             ),
           ],

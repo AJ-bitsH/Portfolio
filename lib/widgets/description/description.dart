@@ -29,18 +29,16 @@ class Description extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'BUDDING DEVELOPER.',
-              style: TextStyle(
-                  fontWeight: FontWeight.w800,
-                  height: 0.9,
-                  fontSize: titleSize),
+              "Hi, I'm Anuj",
+              style:
+                  TextStyle(fontWeight: FontWeight.w800, fontSize: titleSize),
               textAlign: textAlignment,
             ),
             SizedBox(
               height: 30,
             ),
             Text(
-              'Software Developer graduating in August 2021 from BITS Pilani Hyderabad Campus. Currently looking for opportunities in fast-paced working environments. Fast learner with good work ethic.',
+              "Welcome to my developer portfolio. I'm am engineering student graduating in August 2021 from BITS Pilani Hyderabad Campus. Currently looking for opportunities.",
               style: TextStyle(fontSize: descriptionSize, height: 1.7),
               textAlign: textAlignment,
             ),
