@@ -13,7 +13,7 @@ https://portfolio-18850.web.app/
 Will put it up live by year end
 
 Feel free to send any suggestions over mail, I'll be happy to respond
-email: f20160465@hyderabad.bits-pilani.ac.in
+: f20160465@hyderabad.bits-pilani.ac.in
 
 To Do:
 
