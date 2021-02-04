@@ -20,6 +20,16 @@ class ExperienceView extends StatelessWidget {
                 height: 40,
               ),
               ExperienceItem(
+                "AgroStar",
+                "App Development Intern (Remote) - PS 2",
+                "PUNE,MAHARASHTRA      JANUARY 2021 - MAY 2021",
+                "Joined as a software development engineering intern as part of the Practice School 2 programme. Currently learning advanced concepts required for writing production ready code",
+                "images/agrostar_logo.jpg",
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              ExperienceItem(
                 "Apollo Tyres",
                 "App Development Intern (Remote) - PS 2",
                 "GURGAON,HARYANA      AUGUST 2020 - DECEMBER 2020",
