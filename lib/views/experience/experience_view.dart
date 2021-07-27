@@ -21,9 +21,19 @@ class ExperienceView extends StatelessWidget {
               ),
               ExperienceItem(
                 "AgroStar",
+                "Software Development Engineer I",
+                "PUNE,MAHARASHTRA      JULY 2021 - Present",
+                "Joined as an SDE for a Fullstack Web Development role, currently learning the ropes for Python backend development",
+                "images/agrostar_logo.jpg",
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              ExperienceItem(
+                "AgroStar",
                 "App Development Intern (Remote) - PS 2",
-                "PUNE,MAHARASHTRA      JANUARY 2021 - MAY 2021",
-                "Joined as a software development engineering intern as part of the Practice School 2 programme. Currently learning advanced concepts required for writing production ready code",
+                "PUNE,MAHARASHTRA      JANUARY 2021 - JUNE 2021",
+                "Worked as a fullstack web developer for the entirety of the internship. Used NestJS, NodeJS, React(Material UI), React Styled Components, Firebase and other related technologies to work on internal products of the company, contributing to fixes as well as features.",
                 "images/agrostar_logo.jpg",
               ),
               SizedBox(

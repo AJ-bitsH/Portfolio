@@ -10,7 +10,6 @@ https://anujguglani.me
 
 https://portfolio-18850.web.app/
 
-Will put it up live by year end
 
 Feel free to send any suggestions over mail, I'll be happy to respond
 : f20160465@hyderabad.bits-pilani.ac.in
@@ -20,3 +19,12 @@ To Do:
 - Navigation Bar buttons should be underlined when clicked
 - Add the functionality to call to action button
 - Make UI responsive
+
+start commands:
+
+flutter run -d chrome
+
+after changes :
+
+flutter build web
+firebase deploy --only hosting
