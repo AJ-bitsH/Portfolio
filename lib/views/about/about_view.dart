@@ -13,9 +13,9 @@ class AboutView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String descriptionHeader =
-        "I’m Anuj, currently working remotely for AgroStar in Pune, Maharashtra as a software development engineering intern";
+        "I’m Anuj, currently working remotely for AgroStar in Pune, Maharashtra as a software development engineer(SDE I)";
     String descriptionBody =
-        "I’ve spent the past 18+ months working across different areas of product development; front-end development, backend development,cloud architecture , app UI/UX, automation scripting to my current role designing applications for mobile platforms.\n\n"
+        "I’ve spent the past 18+ months working across different areas of product development; front-end development, backend development,cloud architecture , app UI/UX, automation scripting to my current role as a backend engineer.\n\n"
         "These days my time is spent researching, designing, prototyping, and coding.\n\n"
         "Out of the office you’ll find me dreaming of computer games, reading books, and petting all the good dogs.\n\n";
 
